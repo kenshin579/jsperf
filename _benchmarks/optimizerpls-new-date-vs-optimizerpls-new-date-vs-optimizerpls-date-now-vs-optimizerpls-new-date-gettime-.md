@@ -4,20 +4,20 @@ setup: |
   var optimizerPls = null;
 tests:
   -
-    name: optimizerPls = new Date();
+    name: new Date();
     code: |
-      new Date()
+      optimizerPls = new Date();
   -
-    name: optimizerPls = +new Date();
+    name: +new Date();
     code: |
-      +new Date()
+      optimizerPls = +new Date();
   -
-    name: optimizerPls = Date.now();
+    name: Date.now();
     code: |
-      Date.now()
+      optimizerPls = Date.now();
   -
-    name: optimizerPls = (new Date).getTime();
+    name: (new Date).getTime();
     code: |
-      (new Date).getTime()
+     optimizerPls = (new Date).getTime();
 ---
 
